@@ -1,0 +1,8 @@
+/* 1 - Inline, head, externo e Comentários */
+
+/* 2 - Sintaxe básica */
+p {
+  font-family: Arial, sans-serif; /* Define a família da fonte */
+  line-height: 1.6; /* Define a altura da linha */
+  margin-bottom: 20px; /* Define a margem inferior para separação */
+}
