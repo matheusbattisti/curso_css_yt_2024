@@ -1,0 +1,105 @@
+/* 1 - Inline, head, externo e Comentários */
+
+/* 2 - Sintaxe básica */
+p {
+  font-family: Arial, sans-serif; /* Define a família da fonte */
+  line-height: 1.6; /* Define a altura da linha */
+  margin-bottom: 20px; /* Define a margem inferior para separação */
+}
+
+/* 3 - Seletores comuns */
+/* Selecionando elementos pela tag */
+h2 {
+  color: blue;
+}
+
+/* Selecionando elementos pela classe */
+.paragrafo {
+  font-size: 16px;
+}
+
+/* Selecionando elementos pelo ID */
+#destaque {
+  background-color: yellow;
+}
+
+/* 4 - Propriedades de texto */
+.basic-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.styled-text {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000080; /* Um azul marinho */
+}
+
+.weighty-text {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold; /* Texto em negrito */
+  color: #d2691e; /* Um marrom chocolate */
+}
+
+.fancy-text {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #2e8b57; /* Uma cor verde mar */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+/* 5 - Fundamentos das cores */
+.hex-color {
+  color: #ff6347; /* Um tom de vermelho tomate */
+}
+
+.rgb-color {
+  color: rgb(34, 139, 34); /* Um verde floresta usando RGB */
+}
+
+.hsl-color {
+  color: hsl(240, 100%, 50%); /* Um azul brilhante usando HSL */
+}
+
+.rgba-color {
+  color: rgba(255, 99, 71, 0.5); /* Vermelho tomate com 50% de opacidade */
+  background-color: #000; /* Fundo preto para destacar a opacidade */
+}
+
+.hsla-color {
+  color: hsla(120, 100%, 50%, 0.3); /* Verde com 30% de opacidade */
+  background-color: #fff; /* Fundo branco para destacar a opacidade */
+}
+
+/* 6 - Estilização de links */
+.simple-link {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #0000ff; /* Cor azul padrão para links */
+}
+
+.fancy-link {
+  text-decoration: underline; /* Mantém o sublinhado para destacar o link */
+  color: #8a2be2; /* Uma cor violeta */
+  font-style: italic; /* Texto em itálico */
+}
+
+.hover-link {
+  text-decoration: none;
+  color: #ff4500; /* Um laranja forte */
+  transition: color 0.3s; /* Suaviza a transição da cor */
+}
+
+.hover-link:hover {
+  color: #32cd32; /* Muda para verde quando o mouse passa sobre o link */
+}
+
+.bold-link {
+  text-decoration: underline dotted; /* Sublinhado pontilhado */
+  color: #2f4f4f; /* Um cinza escuro */
+  font-weight: bold; /* Aumenta o peso da fonte para negrito */
+}
