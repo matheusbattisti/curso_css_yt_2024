@@ -1,4 +1,7 @@
 /* 1 - Inline, head, externo e Comentários */
+body {
+  margin-bottom: 1500px;
+}
 
 /* 2 - Sintaxe básica */
 p {
@@ -62,6 +65,7 @@ h2 {
   color: rgb(34, 139, 34); /* Um verde floresta usando RGB */
 }
 
+/* Hue, Saturation, Lightness */
 .hsl-color {
   color: hsl(240, 100%, 50%); /* Um azul brilhante usando HSL */
 }
@@ -102,4 +106,100 @@ h2 {
   text-decoration: underline dotted; /* Sublinhado pontilhado */
   color: #2f4f4f; /* Um cinza escuro */
   font-weight: bold; /* Aumenta o peso da fonte para negrito */
+}
+
+/* 7 - Box Model */
+.width-height {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #000; /* Borda preta para visualização */
+  background-color: #ff6347; /* Tomate */
+}
+
+.padding-example {
+  width: 200px;
+  height: 100px;
+  padding-top: 20px; /* Preenchimento no topo */
+  padding-right: 30px; /* Preenchimento à direita */
+  padding-bottom: 20px; /* Preenchimento embaixo */
+  padding-left: 30px; /* Preenchimento à esquerda */
+  border: 2px solid #000; /* Borda preta para visualização */
+  background-color: #4682b4; /* Aço Azul */
+}
+
+.margin-example {
+  width: 200px;
+  height: 100px;
+  margin: 30px; /* Margem uniforme ao redor */
+  border: 2px solid #000; /* Borda preta para visualização */
+  background-color: #32cd32; /* Verde Limão */
+}
+
+.complete-box {
+  width: 200px;
+  height: 100px;
+  padding: 15px; /* Preenchimento uniforme ao redor */
+  margin-top: 15px; /* Margem no topo */
+  margin-right: 25px; /* Margem à direita */
+  margin-bottom: 15px; /* Margem embaixo */
+  margin-left: 25px; /* Margem à esquerda */
+  border: 5px solid #8b4513; /* Borda marrom */
+  background-color: #ffd700; /* Ouro */
+  box-sizing: border-box; /* A borda e o padding são incluídos nas dimensões totais */
+}
+
+/* 8 - Positions */
+.static-example {
+  position: static;
+  background-color: #90ee90; /* Cor light green */
+  border: 2px solid black;
+}
+
+.relative-example {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: #add8e6; /* Cor light blue */
+  border: 2px solid black;
+}
+
+.absolute-example {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  background-color: #ffb6c1; /* Cor light pink */
+  border: 2px solid black;
+}
+
+.fixed-example {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #afeeee; /* Cor pale turquoise */
+  border: 2px solid black;
+}
+
+.sticky-example {
+  position: -webkit-sticky; /* Necessário para suporte Safari */
+  position: sticky;
+  top: 0;
+  background-color: #dda0dd; /* Cor plum */
+  border: 2px solid black;
+}
+
+.relative-container {
+  position: relative;
+  height: 100px;
+  margin-top: 300px; /* Espaço para visualização clara */
+  background-color: #f0e68c; /* Cor khaki */
+  border: 2px solid black;
+}
+
+.absolute-inside-relative {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50%;
+  background-color: #ffdead; /* Navajo White */
+  border: 2px solid black;
 }
