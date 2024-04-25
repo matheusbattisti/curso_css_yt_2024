@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Produto</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Camisas</a></li>
+            <li><a href="#">Calças</a></li>
+            <li><a href="#">Acessórios</a></li>
+          </ul>
+        </nav>
+        <img id="logo" src="img/logo.png" alt="Loja de roupas" />
+        <div class="header-icons">
+          <div class="icon search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="product-container">
+      <div class="product-image">
+        <img src="img/produto.webp" alt="Camisa" />
+      </div>
+
+      <div class="product-details">
+        <h1 class="product-title">Gola polo sport</h1>
+
+        <div class="product-meta">
+          <div class="product-rating-and-reviews">
+            <div class="product-rating">
+              <!-- Ícones de estrelas para avaliação (FontAwesome) -->
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <span class="reviews-count">78 Avaliações</span>
+            </div>
+          </div>
+
+          <p class="product-price">R$ 100,00</p>
+
+          <div class="product-colors">
+            <h3>Cores Disponíveis</h3>
+            <ul class="color-list">
+              <li class="color-option" data-color="Dark Navy"></li>
+              <li class="color-option" data-color="Black"></li>
+              <li class="color-option" data-color="Grey"></li>
+            </ul>
+          </div>
+
+          <div class="product-sizes">
+            <h3>Selecione o Tamanho</h3>
+            <select id="size-select" name="sizes">
+              <option value="small">P</option>
+              <option value="medium" selected>M</option>
+              <option value="large">G</option>
+            </select>
+          </div>
+
+          <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product-description">
+          <h2>Detalhes do Produto</h2>
+          <p>Camisa de alta qualidade, feita com material nobre e importado.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parte inferior produto -->
+    <div class="transparency-section">
+      <div class="transparency-box">
+        <h2>Transparência Total</h2>
+        <p>
+          Compreender e valorizar a importância de nossa vestimenta é
+          fundamental no aprendizado de viver com menos. Quanto mais sabemos,
+          melhores decisões fazemos, mais valorizamos o que temos, e como
+          resultado - menos necessitaremos.
+        </p>
+      </div>
+      <div class="transparency-box">
+        <h3>Custo de Produção</h3>
+        <p>Detalhes todos os custos que temos para criar o produto.</p>
+        <a href="#">Ver detalhamento de custos</a>
+      </div>
+      <div class="transparency-box">
+        <h3>Rastreabilidade</h3>
+        <p>Saiba de onde vem o material para as suas roupas.</p>
+        <a href="#">Mostrar origem do produto</a>
+      </div>
+      <div class="transparency-box">
+        <h3>Impacto de CO2</h3>
+        <p>Veja a redução de impacto ambiental que tivemos no ano de 2024.</p>
+        <a href="#">Mostrar estudo</a>
+      </div>
+    </div>
+  </body>
+</html>

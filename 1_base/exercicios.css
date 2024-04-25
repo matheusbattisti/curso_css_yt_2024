@@ -1,0 +1,46 @@
+/* Exercício 1 */
+.background-highlight {
+  background-color: yellow;
+}
+
+/* Exercício 2 */
+h1 {
+  background-color: lightblue;
+}
+
+.text-large {
+  font-size: 24px;
+}
+
+/* Exercício 3 */
+.hex-color {
+  color: #0000ff; /* Azul */
+}
+
+.bg-opacity {
+  background-color: rgba(0, 0, 255, 0.5); /* Azul com opacidade */
+}
+
+/* Exercício 4 */
+.padding-example {
+  padding: 20px;
+}
+
+.width-height {
+  margin: 15px;
+}
+
+/* Exercício 5 */
+.relative-container {
+  position: relative;
+  height: 200px; /* Para melhor visualização */
+  background-color: #f0e68c;
+}
+
+.absolutely-positioned {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #ffdead;
+}

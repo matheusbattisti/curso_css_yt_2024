@@ -203,3 +203,38 @@ h2 {
   background-color: #ffdead; /* Navajo White */
   border: 2px solid black;
 }
+
+/* 9 - Introdução ao flexbox */
+.flex-container {
+  display: flex; /* Ativa o Flexbox */
+  border: 2px solid #333; /* Adiciona uma borda para visualizar o contêiner */
+  padding: 10px;
+  height: 1000px;
+}
+
+.flex-item {
+  width: 100px; /* Largura fixa para os itens para diferenciar */
+  margin: 5px; /* Margem entre os itens */
+  padding: 10px;
+  border: 1px solid blue; /* Borda para visualizar os itens */
+}
+
+/* Alinhamento */
+.flex-container {
+  justify-content: flex-start; /* Alinha itens ao início do contêiner */
+}
+
+.flex-container {
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Flexibilidade */
+.flex-item {
+  flex: 1;
+}
+
+/* Layout de coluna */
+.flex-container {
+  flex-direction: column;
+}

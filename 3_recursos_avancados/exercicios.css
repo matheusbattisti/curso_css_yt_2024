@@ -1,0 +1,109 @@
+/* Exercício 1: Alteração de Cores de Fundo */
+.div1,
+.div2,
+.div3 {
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
+}
+.div1 {
+  background-color: lightblue;
+}
+.div1:hover {
+  background-color: blue;
+}
+.div2 {
+  background-color: lightgreen;
+}
+.div2:hover {
+  background-color: green;
+}
+.div3 {
+  background-color: lightcoral;
+}
+.div3:hover {
+  background-color: red;
+}
+
+/* Exercício 2: Borda e Raio de Borda */
+.p1,
+.p2,
+.p3 {
+  padding: 10px;
+  margin: 5px;
+}
+.p1 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+.p2 {
+  border: 3px solid green;
+  border-radius: 10px;
+}
+.p3 {
+  border: 4px solid blue;
+  border-radius: 15px;
+}
+
+/* Exercício 3: Espaçamento de Parágrafos */
+.paragraph {
+  text-indent: 20px;
+  line-height: 1.6;
+  margin: 10px;
+  width: 100px;
+}
+
+/* Exercício 4: Alinhamento de Texto */
+.h2-left {
+  text-align: left;
+}
+.h2-center {
+  text-align: center;
+}
+.h2-right {
+  text-align: right;
+}
+
+/* Exercício 5: Transformação de Texto */
+.button-uppercase,
+.button-lowercase,
+.button-capitalize {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.button-uppercase {
+  text-transform: uppercase;
+}
+.button-lowercase {
+  text-transform: lowercase;
+}
+.button-capitalize {
+  text-transform: capitalize;
+}
+
+/* Exercício 6: Imagem de Fundo com Opacidade */
+.background-div {
+  background-image: url("path/to/image.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  color: black;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Exercício 7: Lista Horizontal */
+.horizontal-menu {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 10px;
+}
+.horizontal-menu li {
+  padding: 10px;
+  background-color: lightgray;
+  margin-right: 5px;
+}

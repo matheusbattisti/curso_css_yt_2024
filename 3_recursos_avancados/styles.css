@@ -1,0 +1,286 @@
+body {
+  margin-bottom: 1000px;
+}
+
+/* 1 - Estilos para lista */
+.lista-pontos {
+  list-style-type: circle; /* Utilizando um estilo de ponto circular */
+}
+
+.lista-numerica {
+  list-style-type: decimal; /* Números decimais padrão */
+  color: blue; /* Apenas para destacar o texto */
+  margin-left: 20px; /* Espaço para alinhamento visual */
+}
+
+.lista-imagem {
+  margin-left: 100px;
+  list-style-type: none; /* Removendo o estilo padrão */
+  list-style-image: url("img/circle.png");
+  padding-left: 0; /* Removendo padding padrão para ajuste visual */
+}
+
+/* 2 - unidades de medida */
+.container {
+  width: 80%; /* Largura do container em porcentagem do elemento pai */
+  margin: auto; /* Centralizando na página */
+  border: 2px solid #000; /* Borda para visualização clara */
+  padding: 20px; /* Espaço interno */
+}
+
+.pixel-box {
+  width: 200px; /* Largura fixa em pixels */
+  height: 100px; /* Altura fixa em pixels */
+  background-color: lightblue; /* Cor de fundo */
+  border: 1px solid navy; /* Borda para diferenciar */
+  margin-bottom: 10px; /* Espaço abaixo da caixa */
+}
+
+.percent-box {
+  width: 50%; /* Largura em porcentagem relativa ao container */
+  height: 50px; /* Altura fixa */
+  background-color: lightgreen; /* Cor de fundo */
+  border: 1px solid darkgreen; /* Borda para diferenciar */
+}
+
+.em-text {
+  font-size: 2em; /* Tamanho do texto em em */
+  /* 1em = tamanho do font-size do elemento pai (aqui é o .container) */
+  color: darkred; /* Cor do texto */
+}
+
+.rem-text {
+  font-size: 1.5rem; /* Tamanho do texto em rem */
+  /* 1rem = tamanho do font-size do elemento raiz (html), normalmente 16px */
+  color: darkblue; /* Cor do texto */
+}
+
+/* 3 - Pseudo-classes e Pseudo-elementos */
+.styled-list {
+  list-style-type: none; /* Remove o marcador padrão */
+  margin: 0;
+  padding: 0;
+}
+
+.styled-list li:first-child {
+  color: red; /* Texto vermelho para o primeiro item da lista */
+}
+
+.styled-list li::before {
+  content: "• "; /* Adiciona um marcador personalizado antes do texto */
+  color: blue; /* Cor azul para o marcador */
+}
+
+.hover-box {
+  width: 200px;
+  height: 100px;
+  background-color: #eee;
+  line-height: 100px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s; /* Suavização na transição de cores e transformação */
+}
+
+.hover-box:hover {
+  background-color: #ccc; /* Cor de fundo alterada quando o mouse passa sobre o elemento */
+  transform: scale(
+    1.1
+  ); /* Aumenta o tamanho do box quando o mouse está sobre ele */
+}
+
+/* 4 - Gradient - degrade */
+.linear-gradient-box {
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  /* Cria um gradiente linear do vermelho ao violeta da esquerda para a direita */
+}
+
+.radial-gradient-box {
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle, red, yellow, green);
+  /* Cria um gradiente radial que começa no centro como vermelho e se expande para amarelo e verde */
+}
+
+.multiple-gradients-box {
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      to left,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0)
+    ),
+    radial-gradient(circle at top, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0));
+  /* Combina um gradiente linear e radial com transparência para criar um efeito visual complexo */
+}
+
+/* 5 - Box Shadow e Text Shadow */
+.box-shadow-example {
+  width: 300px;
+  height: 100px;
+  background-color: #f0f0f0;
+  box-shadow: 10px 10px 20px grey; /* Horizontal offset, vertical offset, blur radius, color */
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.text-shadow-example {
+  font-size: 24px;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  margin: 20px;
+}
+
+.multiple-box-shadows {
+  width: 300px;
+  height: 100px;
+  background-color: #f0f0f0;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
+    -3px -3px 5px rgba(256, 256, 256, 0.5); /* Two shadows: one darker, one lighter */
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+/* 6 - z index */
+.z-index-box {
+  position: relative;
+  height: 300px;
+}
+
+.box {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black; /* Adicionado para visualização clara dos limites */
+}
+
+.background {
+  background-color: #ddd;
+  top: 20px;
+  left: 20px;
+  z-index: 1; /* Mais ao fundo */
+}
+
+.middle {
+  background-color: #bbb;
+  top: 40px;
+  left: 40px;
+  z-index: 2; /* Meio */
+}
+
+.foreground {
+  background-color: #999;
+  top: 60px;
+  left: 60px;
+  z-index: 3; /* Mais ao frente */
+}
+
+/* 7 - Variaveis */
+:root {
+  --main-color: #4caf50; /* Cor principal para uso em texto e fundo */
+  --padding-value: 10px; /* Padding uniforme para uso em vários elementos */
+  --text-color: #ffffff; /* Cor do texto a ser usado contra fundos escuros */
+}
+
+.content {
+  padding: var(--padding-value);
+  border: 1px solid #ccc;
+}
+
+.text {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: var(--padding-value);
+}
+
+.button {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: none;
+  padding: var(--padding-value);
+  cursor: pointer;
+}
+
+/* 8 - Grid */
+.grid-container {
+  display: grid;
+}
+.grid-item {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Definição de colunas */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Cria três colunas iguais */
+}
+
+/* Espaçamento entre colunas */
+.grid-container {
+  grid-gap: 10px; /* Adiciona um espaçamento entre as células do grid */
+}
+
+/* Áreas do grid */
+.grid-container-area {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Divide o grid em duas colunas */
+  grid-template-rows: auto 1fr auto; /* Divide o grid em três linhas com alturas auto para o cabeçalho e o rodapé, e 1fr para o conteúdo */
+  grid-gap: 10px; /* Espaço entre as células do grid */
+  height: 100vh; /* Altura total da viewport */
+}
+
+.header {
+  grid-column: 1 / -1; /* O cabeçalho se estende por todas as colunas */
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.main-content {
+  grid-column: 2; /* O conteúdo principal ocupa a segunda coluna */
+  grid-row: 2; /* O conteúdo principal está na segunda linha */
+  background-color: #fff;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-column: 1; /* A barra lateral ocupa a primeira coluna */
+  grid-row: 2; /* A barra lateral está na segunda linha */
+  background-color: #eee;
+  padding: 20px;
+}
+
+.footer {
+  grid-column: 1 / -1; /* O rodapé se estende por todas as colunas */
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+}
